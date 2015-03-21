@@ -1,0 +1,9 @@
+services:
+    symfony_persia.jdate_lib:
+        class: SymfonyPersia\JalaliDateBundle\lib\JDateTime
+        arguments: [ true, true, "Asia/Tehran" ]
+        public: false
+    symfony_persia.jdate:
+        class: SymfonyPersia\JalaliDateBundle\Service\JalaliDateTime
+        arguments: [ @symfony_persia.jdate_lib ]
+        public: true

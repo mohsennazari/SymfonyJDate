@@ -1,11 +1,18 @@
 {
-    "name": "sallar/jdatetime",
-    "type": "library",
-    "description": "Jalali (Shamsi) DateTime class written in PHP, Supports year higher than 2038",
+    "name": "symfony_persia/symfonyjdate",
+    "type": "symfony-bundle",
+    "description": "Jalali (Shamsi) DateTime for Symfony2, Supports year higher than 2038",
     "keywords": ["date", "datetime", "jalali", "jalalidate", "jdatetime","shamsi","iran","farsi","persian","time"],
     "homepage": "http://sallar.me/projects/jdatetime/",
     "license": "MIT",
     "authors": [
+        {
+
+            "name": "MohammadHossein Heydari",
+            "email": "mdh.heydari@gmail.com",
+            "homepage": "https://github.com/mdhheydari",
+            "role": "Developer"
+        },
         {
             "name": "Sallar Kaboli",
             "email": "sallar.kaboli@gmail.com",
@@ -17,9 +24,10 @@
         "php": ">=5.2.0"
     },
     "autoload": {
-        "classmap": [
-            "jdatetime.class.php"
-        ]
+        "psr-0": {
+            "SymfonyPersia\\JalaliDateBundle" : ""
+        }
     },
+    "target-dir": "SymfonyPersia\\JalaliDateBundle",
     "minimum-stability": "dev"
 }

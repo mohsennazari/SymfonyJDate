@@ -1,12 +1,7 @@
-#jDateTime
+# Symfony JalaliDateTime
 
-PHP class to convert dates from Gregorian calendar system to Jalali calendar system and vice versa. Supports dates beyond 2038.  
-Jalali, also known as Shamsi or Hijri Shamsi is the Iranian calendar system.  
-[![Build Status](https://travis-ci.org/sallar/jDateTime.png?branch=master)](https://travis-ci.org/sallar/jDateTime)
-
-#About v2.2.0
-
-PHP's default `date` function does not support years higher than 2038, so the `DateTime` class was introduced in PHP5 to solve this problem and provide more sophisticated date methods. Iranian users have been using an old `jdate` function to convert Gregorian date to the Jalali equivalent, which is completely based on the old php `date` function so its pretty much out-dated. 
+Symfony Bundle for converting dates from Gregorian calendar system to Jalali calendar system and vice versa. Supports dates beyond 2038.  
+Jalali, also known as Shamsi or Hijri Shamsi is the Iranian calendar system. It uses [Salar Kaboli's jDateTime class](https://github.com/sallar/jDateTime) for the conversion. 
 
 #Requirements
 
@@ -14,40 +9,26 @@ jDateTime Requires **PHP >= 5.2**
 
 #Installation
 
-##Using Composer
-
-You can install this package using [composer](https://getcomposer.org). Add this package to your `composer.json`:  
+Add these line to your composer.json and update:
 
 ```
 "require": {
-	"sallar/jdatetime": "dev-master"
+	"mdhheydari/symfonyjdate": "dev-master"
 }
-```
-
-or if you prefer command line, change directory to project root and:
-
-```
-php composer.phar require "sallar/jdatetime":"dev-master"
-```
-
-##Manual Installation
-
-Get a copy of package source code. You can do this in two ways:
-
-1. Download ZIP version of the source code and unzip it in desired location  
-2. Run `git clone https://github.com/sallar/jDateTime.git` to clone this repository  
-
-After getting a copy of source code, it is enough to include `jdatetime.class.php` where you need to use it.
-
-```php
-require_once 'path/to/source/jdatetime.class.php';
 ```
 
 #Examples
 
-Please see [examples.php](examples.php) and [example-static.php](examples-static.php) for working examples.
+Get the jDateTime as a service and use it:
+
+```
+$jDate = $serviceContainer->get('symfony_persia.jdate');
+```
+
+More examples will be made in future.
 
 #Contributors:
+- [MohammadHossein Heydari](https://github.com/mdhheydari)
 - [Sallar Kaboli](http://sallar.me)  
 - [Omid Pilevar](http://pilevar.ir)
 - [Afshin Mehrabani](http://afshinm.name)  
@@ -55,6 +36,8 @@ Please see [examples.php](examples.php) and [example-static.php](examples-static
 - [Ruhollah Namjoo](https://github.com/namjoo)
 
 ##License
+Symfony JalaliDate was created by [MohammadHossein Heydari](https://github.com/mdhheydari) and released under the [MIT License](http://opensource.org/licenses/mit-license.php).
+
 jDateTime was created by [Sallar Kaboli](http://sallar.me) and released under the [MIT License](http://opensource.org/licenses/mit-license.php).
 
 Copyright (C) 2015 [Sallar Kaboli](http://sallar.me)  
@@ -89,9 +72,3 @@ Copyright (C) 2000  Roozbeh Pournader and Mohammad Toossi
 - [List of supported timezones](http://www.php.net/manual/en/timezones.php)  
 - [Documentation and Instructions in Persian](http://sallar.me/projects/jdatetime)  
 - [Project page in phpclasses.org](http://www.phpclasses.org/jdatetime)   
-
-#Support This Project
-  
-[![Donate via Paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R7Y6R3UZLUNP6)
-
-
