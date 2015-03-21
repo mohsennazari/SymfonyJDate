@@ -2,7 +2,7 @@
     "name": "symfony_persia/symfonyjdate",
     "type": "symfony-bundle",
     "description": "Jalali (Shamsi) DateTime for Symfony2, Supports year higher than 2038",
-    "keywords": ["date", "datetime", "jalali", "jalalidate", "jdatetime","shamsi","iran","farsi","persian","time"],
+    "keywords": ["datetime", "jalali", "symfony", "jalalidate", "jdatetime","shamsi","farsi","persian","time"],
     "homepage": "http://sallar.me/projects/jdatetime/",
     "license": "MIT",
     "authors": [
