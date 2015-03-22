@@ -1,9 +1,15 @@
 services:
     symfony_persia.jdate_lib:
-        class: SymfonyPersia\JalaliDateBundle\lib\JDateTime
-        arguments: [ true, true, "Asia/Tehran" ]
+        class: SymfonyPersia\JalaliDateBundle\lib\jDateTime
+        arguments: [ true, true ]
         public: false
     symfony_persia.jdate:
         class: SymfonyPersia\JalaliDateBundle\Service\JalaliDateTime
         arguments: [ @symfony_persia.jdate_lib ]
         public: true
+    symfony_persia.jdate_extension:
+        class: SymfonyPersia\JalaliDateBundle\Twig\JalaliDateExtension
+        arguments: [ @symfony_persia.jdate_lib ]
+        public: true
+        tags:
+            - { name: twig.extension }

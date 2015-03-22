@@ -19,13 +19,28 @@ Add these line to your composer.json and update:
 
 #Examples
 
-Get the jDateTime as a service and use it:
+There is two ways to use this bundle:
 
+##1. As a Twig filter (recommended)
+
+Simply you can filter any variable containing a date, datetime, interval or date string:
+```
+{{ entity.date|jdate }}
+```
+
+Also it's possible to chose the format:
+```
+{{ entity.date|jdate('Y-m-d') }}
+```
+
+##2. As a service
+
+Not recommanded, Maybe neccessary in some situations though.
+
+Example:
 ```
 $jDate = $serviceContainer->get('symfony_persia.jdate');
 ```
-
-More examples will be made in future.
 
 #Contributors:
 - [MohammadHossein Heydari](https://github.com/mdhheydari)
@@ -36,7 +51,9 @@ More examples will be made in future.
 - [Ruhollah Namjoo](https://github.com/namjoo)
 
 ##License
-Symfony JalaliDate was created by [MohammadHossein Heydari](https://github.com/mdhheydari) and released under the [MIT License](http://opensource.org/licenses/mit-license.php).
+Symfony JalaliDate Bundle was created by [MohammadHossein Heydari](https://github.com/mdhheydari) and released under the [MIT License](http://opensource.org/licenses/mit-license.php).
+
+Copyright (C) 2015 [MohammadHossein Heydari](https://github.com/mdhheydari)
 
 jDateTime was created by [Sallar Kaboli](http://sallar.me) and released under the [MIT License](http://opensource.org/licenses/mit-license.php).
 
@@ -48,6 +65,7 @@ Copyright (C) 2000  Roozbeh Pournader and Mohammad Toossi
 
     The MIT License (MIT)
     
+    Copyright (C) 2015      MohammadHossein Heydari
     Copyright (C) 2003-2015 Sallar Kaboli
 
     Permission is hereby granted, free of charge, to any person obtaining a
