@@ -28,6 +28,6 @@
             "SymfonyPersia\\JalaliDateBundle" : ""
         }
     },
-    "target-dir": "SymfonyPersia\\JalaliDateBundle",
+    "target-dir": "SymfonyPersia/JalaliDateBundle",
     "minimum-stability": "dev"
 }
