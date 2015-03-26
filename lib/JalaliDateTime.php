@@ -35,7 +35,7 @@ namespace SymfonyPersia\JalaliDateBundle\lib;
  * http://www.php.net/manual/en/timezones.php
  *
  *
- * @package    jDateTime
+ * @package    JalaliDateTime
  * @author     Sallar Kaboli <sallar.kaboli@gmail.com>
  * @author     Omid Pilevar <omid.pixel@gmail.com>
  * @copyright  2003-2012 Sallar Kaboli
@@ -44,7 +44,7 @@ namespace SymfonyPersia\JalaliDateBundle\lib;
  * @see        DateTime
  * @version    2.2.0
  */
-class jDateTime
+class JalaliDateTime
 {
 
     /**
@@ -97,7 +97,7 @@ class jDateTime
     {
         //Timestamp + Timezone
         $stamp    = ($stamp !== false) ? $stamp : time();
-        $timezone = ($timezone != null) ? $timezone : ((self::$timezone != null) ? self::$timezone : date_default_timezone_get());
+        $timezone = ($timezone !== null) ? $timezone : ((self::$timezone !== null) ? self::$timezone : date_default_timezone_get());
         $obj      = new \DateTime('@' . $stamp, new \DateTimeZone($timezone));
         $obj->setTimezone(new \DateTimeZone($timezone));
 
@@ -353,8 +353,8 @@ class jDateTime
         //Create a new object and set the timezone if available
         $date = $year.'-'.sprintf('%02d', $month).'-'.sprintf('%02d', $day).' '.$hour.':'.$minute.':'.$second;
 
-        if ( self::$timezone != null || $timezone != null ) {
-            $obj = new \DateTime($date, new \DateTimeZone(($timezone != null) ? $timezone : self::$timezone));
+        if ( self::$timezone !== null || $timezone !== null ) {
+            $obj = new \DateTime($date, new \DateTimeZone(($timezone !== null) ? $timezone : self::$timezone));
         }
         else {
             $obj = new \DateTime($date);

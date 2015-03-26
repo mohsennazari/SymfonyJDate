@@ -2,7 +2,7 @@
 
 namespace SymfonyPersia\JalaliDateBundle\Service;
 
-use SymfonyPersia\JalaliDateBundle\lib\JDateTime;
+use SymfonyPersia\JalaliDateBundle\lib\JalaliDateTime as JDate;
 
 /**
  * Jalali DateTime Service
@@ -16,11 +16,11 @@ use SymfonyPersia\JalaliDateBundle\lib\JDateTime;
  */
 class JalaliDateTime {
     /**
-     * @var jDateTime 
+     * @var JDate
      */
     private $jDate;
 
-    public function __construct(jDateTime $jDate) {
+    public function __construct(JDate $jDate) {
         $this->jDate = $jDate;
     }
 

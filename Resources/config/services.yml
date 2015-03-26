@@ -1,6 +1,6 @@
 services:
     symfony_persia.jdate_lib:
-        class: SymfonyPersia\JalaliDateBundle\lib\jDateTime
+        class: SymfonyPersia\JalaliDateBundle\lib\JalaliDateTime
         arguments: [ true, true ]
         public: false
     symfony_persia.jdate:
