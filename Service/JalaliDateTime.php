@@ -91,7 +91,7 @@ class JalaliDateTime {
         return $this->jDate($format, $stamp, $convert, $jalali, $timezone); 
     }
 
-   /**
+    /**
      * jDateTime::Mktime
      *
      * Creates a Unix Timestamp (Epoch Time) based on given parameters
@@ -155,7 +155,7 @@ class JalaliDateTime {
      * @param $g_y Gregorian year
      * @param $g_m Gregorian month
      * @param $g_d Gregorian day
-     * @return array Jalali date
+     * @return integer[] Jalali date
      */
     public function toJalali($g_y, $g_m, $g_d) {
         return $this->jDate->toJalali($g_y, $g_m, $g_d);
