@@ -25,9 +25,8 @@
     },
     "autoload": {
         "psr-4": {
-            "SymfonyPersia\\JalaliDateBundle" : ""
+            "SymfonyPersia\\JalaliDateBundle\\" : ""
         }
     },
-    "target-dir": "SymfonyPersia/JalaliDateBundle",
     "minimum-stability": "dev"
 }
