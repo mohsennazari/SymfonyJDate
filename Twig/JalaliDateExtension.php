@@ -2,7 +2,7 @@
 
 namespace SymfonyPersia\JalaliDateBundle\Twig;
 
-use SymfonyPersia\JalaliDateBundle\lib\jDateTime;
+use SymfonyPersia\JalaliDateBundle\lib\JalaliDateTime as JDate;
 
 class JalaliDateExtension extends \Twig_Extension
 {
@@ -10,12 +10,12 @@ class JalaliDateExtension extends \Twig_Extension
     const DEFAULT_DATE_FORMAT = 'l, d M Y H:i:s O';
 
     /**
-     * Instance of jDateTime service
-     * @var jDateTime 
+     * Instance of JalaliDateTime service
+     * @var JDate
      */
     private $jDate;
 
-    public function __construct(jDateTime $jDate) {
+    public function __construct(JDate $jDate) {
         $this->jDate = $jDate;
     } 
 
