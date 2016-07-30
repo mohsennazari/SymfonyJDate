@@ -10,13 +10,10 @@ jDateTime Requires **PHP >= 5.2**
 
 #Installation
 
-Add these line to your composer.json and update:
-
 ```
-"require": {
-	"mdhheydari/symfonyjdate": "dev-master"
-}
+composer require symfony_persia/symfonyjdate
 ```
+And then add the package to app/AppKernel.php
 
 #Examples
 
