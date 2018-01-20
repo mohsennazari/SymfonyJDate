@@ -5,11 +5,11 @@ services:
         public: false
     symfony_persia.jdate:
         class: SymfonyPersia\JalaliDateBundle\Service\JalaliDateTime
-        arguments: [ @symfony_persia.jdate_lib ]
+        arguments: [ '@symfony_persia.jdate_lib' ]
         public: true
     symfony_persia.jdate_extension:
         class: SymfonyPersia\JalaliDateBundle\Twig\JalaliDateExtension
-        arguments: [ @symfony_persia.jdate_lib ]
+        arguments: [ '@symfony_persia.jdate_lib' ]
         public: true
         tags:
             - { name: twig.extension }
