@@ -1,5 +1,5 @@
 {
-    "name": "symfony_persia/symfonyjdate",
+    "name": "mohsen_symfony_persia/symfonyjdate",
     "type": "symfony-bundle",
     "description": "Jalali (Shamsi) DateTime for Symfony2, Supports year higher than 2038",
     "keywords": ["datetime", "jalali", "symfony", "jalalidate", "jdatetime","shamsi","farsi","persian","time"],
@@ -17,6 +17,12 @@
             "name": "Sallar Kaboli",
             "email": "sallar.kaboli@gmail.com",
             "homepage": "http://sallar.me",
+            "role": "Developer"
+        },
+        {
+            "name": "Mohsen Nazari",
+            "email": "mohsennazar90@gmail.com",
+            "homepage": "http://mohsen.codes",
             "role": "Developer"
         }
     ],
