@@ -1,5 +1,6 @@
 # Symfony JalaliDateTime
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/16d6b63a-1f25-413d-9b92-f7b823027102/mini.png)](https://insight.sensiolabs.com/projects/16d6b63a-1f25-413d-9b92-f7b823027102) [![Latest Stable Version](https://poser.pugx.org/symfony_persia/symfonyjdate/v/stable.svg)](https://packagist.org/packages/symfony_persia/symfonyjdate) [![License](https://poser.pugx.org/symfony_persia/symfonyjdate/license.svg)](https://packagist.org/packages/symfony_persia/symfonyjdate)
+
+#### My changes on the original library to make it compatible with symfony 3x.
 
 Symfony Bundle for converting dates from Gregorian calendar system to Jalali calendar system and vice versa. Supports dates beyond 2038.  
 Jalali, also known as Shamsi or Hijri Shamsi is the Iranian calendar system. It uses [Salar Kaboli's jDateTime class](https://github.com/sallar/jDateTime) for the conversion. 
